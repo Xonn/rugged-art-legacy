@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Minion";
+    src: url("fonts/MinionProRegular.ttf");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/futura_light_bt.ttf");
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("fonts/BebasNeue.otf");
+}
+
+:root {
+    --color-primary: #FF9F2B;
+    --color-secondary: #703FD4;
+
+    --color-grey-darker: #0A0A0A;
+    --color-grey-dark: #2C2D2C;
+    --color-grey: #626262;
+    --color-grey-light: #B6B7B9;
+    --color-grey-lighter: #E9E9EB;
+}
+
+body {
+    background-color: var(--color-grey-dark);
+}
