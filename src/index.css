@@ -32,7 +32,3 @@
     --color-grey-light: #B6B7B9;
     --color-grey-lighter: #E9E9EB;
 }
-
-body {
-    background-color: var(--color-grey-dark);
-}
