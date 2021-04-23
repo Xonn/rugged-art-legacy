@@ -1,5 +1,6 @@
 import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from './components/footer';
 import Homepage from './pages/homepage/Homepage';
 import Portfolio from './pages/portfolio/Portfolio';
 import About from './pages/about/About';
@@ -23,6 +24,7 @@ function App() {
             <Route path={route.path} exact render={() => (<route.component dark={route.dark} />)} />
           ))}
         </Switch>
+        <Footer routes={routes} />
       </Router>
     </div>
   );
