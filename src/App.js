@@ -1,5 +1,9 @@
 import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Homepage from './pages/homepage/Homepage';
+import Portfolio from './pages/portfolio/Portfolio';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 
 const routes = [
   { path: '/', name: 'Accueil', component: Homepage, dark: true },
