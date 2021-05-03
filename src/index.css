@@ -32,3 +32,15 @@
     --color-grey-light: #B6B7B9;
     --color-grey-lighter: #E9E9EB;
 }
+
+.tab > li {
+    font-size: 1.4rem;
+    padding: 0.5em 0.5em 0 0.5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0px;
+    padding-left: 0.5em;
+    line-height: 0.2rem;
+    margin-left: 1rem;
+    border-bottom: 12px solid rgba(112, 63, 212, 0.7);
+}
