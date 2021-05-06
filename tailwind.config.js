@@ -17,7 +17,13 @@ module.exports = {
         bebas: ['Bebas'],
         minion: ['Minion'],
         futura: ['Futura'],
-      }
+      },
+      transformOrigin: {
+        "0": "0%",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
     },
   },
   variants: {
