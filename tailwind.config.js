@@ -13,7 +13,7 @@ module.exports = {
         greyLighter: 'var(--color-grey-lighter)',
       },
       fontFamily: {
-        openSans: ['OpenSans'],
+        openSans: ['Open Sans'],
         bebas: ['Bebas'],
         minion: ['Minion'],
         futura: ['Futura'],
