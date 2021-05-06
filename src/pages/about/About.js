@@ -80,14 +80,14 @@ const About = ({dark}) => {
                 </TabPanel>
 
                 <TabPanel className="relative">
-                    <div className="flex flex-row flex-wrap items-center justify-center">
+                    <div className="flex flex-row items-center justify-center">
                         {interests.map((interest, index) =>
                             <>
-                                <div className={`justify-center w-1/3 md:w-1/5 p-2 md:p-8 ${index === 0 ? `-mt-11`: ``}`}>
+                                <div className={`justify-center w-full md:w-1/5 p-2 md:p-8 ${index === 0 ? `-mt-11`: ``}`}>
                                     <div className="relative flex items-center justify-center mb-5">
                                         <div>
                                             <img onClick={() => {setActiveIndex(index)}} className="w-52" src={interest.image} alt=""/>
-                                            <span className="flex justify-center mt-5 text-lg font-openSans text-greyLight">{interest.name}</span>
+                                            <span className="flex justify-center mt-5 text-sm md:text-lg font-openSans text-greyLight">{interest.name}</span>
                                         </div>
                                         {(index < (interests.length -1) ? 
                                             (<span className={`absolute hidden md:inline-block w-5 h-5 m-5 rounded-full -right-14 bg-secondary ${index === 0 ? `top-28`: ``}`}></span>)
@@ -101,7 +101,7 @@ const About = ({dark}) => {
                     </div>
                     <div className="h-48">
                         {interests.map((interest, index) =>
-                            <p className={`w-full lg:w-2/3 justify-center m-auto text-justify font-futura bg-secondary bg-opacit0 p-5 ${ activeIndex === index ? 'visible' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: interest.description}}></p>
+                            <p className={`w-full lg:w-2/3 justify-center m-auto text-justify font-futura bg-secondary p-3 md:p-5 ${ activeIndex === index ? 'visible' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: interest.description}}></p>
                         )}
                     </div>
                 </TabPanel>
