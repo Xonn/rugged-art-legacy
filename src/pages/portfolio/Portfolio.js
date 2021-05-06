@@ -31,7 +31,7 @@ const Portfolio = ({dark}) => {
         <>
             <img className="w-3/4 p-10 m-auto md:w-1/2 xl:w-2/5" src={portfolioSVG} alt=""/>
 
-            <div className="flex flex-wrap w-5/6 m-auto sm:w-4/6 md:w-3/6">
+            <div className="flex flex-wrap w-4/5 m-auto lg:w-3/4">
                 {projects.map(project => (
                     <div className="relative w-1/2 p-3 mt-5 sm:w-1/2 md:w-1/3 lg:w-1/4">
                         {/* <div className="relative"> */}
