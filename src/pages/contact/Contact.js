@@ -25,8 +25,8 @@ const Contact = ({dark}) => {
 
             <form className="w-2/5 p-8 m-auto space-y-10 font-futura">
                 <div className="flex justify-center">
-                    <a href="" className="px-3 py-1 m-3 font-futura bg-greyDarker text-greyLighter ">Lire mon cv !</a>
-                    <a href="" className="px-3 py-1 m-3 font-futura bg-greyDarker text-greyLighter">Découvrir mon book</a>
+                    <button className="px-3 py-1 m-3 font-futura bg-greyDarker text-greyLighter ">Lire mon cv !</button>
+                    <button className="px-3 py-1 m-3 font-futura bg-greyDarker text-greyLighter">Découvrir mon book</button>
                 </div>
                 {/* <h2 className="text-2xl font-bold text-center">Login</h2> */}
                 <div className="relative border-b border-grey focus-within:border-secondary">
