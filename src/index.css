@@ -55,5 +55,8 @@
     padding-left: 0.5em;
     line-height: 0.2rem;
     margin-left: 1rem;
+}
+
+.tab > li:hover, .tab > .react-tabs__tab--selected {
     border-bottom: 12px solid rgba(112, 63, 212, 0.7);
 }

@@ -109,19 +109,19 @@ const About = ({dark}) => {
                     Compétences
                 </TabPanel>
                 <TabList className="absolute bottom-0 left-0 right-0 flex flex-wrap justify-center mt-20 text-xl tab font-minion text-greyDarker">
-                    <Tab className="leading-3 border-b-8 border-opacity-50 border-secondary p-0.5">
+                    <Tab>
                         Introduction
                     </Tab>
                 
-                    <Tab className="p-5">
+                    <Tab>
                         Expériences
                     </Tab>
 
-                    <Tab className="p-5">
+                    <Tab>
                         Intérêts
                     </Tab>
 
-                    <Tab className="p-5">
+                    <Tab>
                         Compétences
                     </Tab>
                 </TabList>
