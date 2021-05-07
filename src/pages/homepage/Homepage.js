@@ -14,6 +14,7 @@ import nextArrow from '../../images/carousel/nextArrow.svg';
 import first from '../../images/home/bt_home_first.png';
 import second from '../../images/home/bt_home_second.png';
 import third from '../../images/home/bt_home_third.png';
+import LazyLoad from 'react-lazyload';
 
 SwiperCore.use([Navigation,Lazy,Autoplay,EffectFade])
 
@@ -67,8 +68,10 @@ const Homepage = ({dark}) => {
             >
                 {banners.map(banner =>     
                     <SwiperSlide>
-                        <img className="w-full px-3 py-6 overflow-hidden bg-cover md:p-12" src={banner.image} alt={banner.title}/>
-                        <span className="absolute flex justify-center m-auto text-6xl -bottom-2.5 md:-bottom-6 md:text-9xl left-1/2 right-1/2 font-bebas text-primary">0{banner.id}</span>
+                        <LazyLoad height={'100%'} once>
+                            <img className="w-full px-3 py-6 overflow-hidden bg-cover md:p-12" src={banner.image} alt={banner.title}/>
+                            <span className="absolute flex justify-center m-auto text-6xl -bottom-2.5 md:-bottom-6 md:text-9xl left-1/2 right-1/2 font-bebas text-primary">0{banner.id}</span>
+                        </LazyLoad>
                     </SwiperSlide>
                 )}
                 <PrevArrow />

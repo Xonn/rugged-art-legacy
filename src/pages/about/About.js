@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import { NavLink } from 'react-router-dom';
 import portrait from '../../images/about/introduction/portrait.png';
 import hello from '../../images/about/introduction/pt_intro_hello.svg';
 import particle from '../../images/about/introduction/pt_intro_photo_purple.svg';
@@ -11,7 +10,7 @@ import graphic from '../../images/about/interest/interest_graphic.svg';
 import travel from '../../images/about/interest/interest_travel.svg';
 import game from '../../images/about/interest/interest_game.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
+import LazyLoad from 'react-lazyload';
 
 const interests = [
     { name: "Culture Japonaise", image: japan, description: "Mon amour pour la culture du pays au soleil levant ne s’arrête pas uniquement aux mangas ou aux animés. <b>Le Japon</b> est un pays qui m’a toujours fasciné, avant même d’avoir la chance d’y aller. L’harmonie entre tradition et modernisme, la richesse de ses folklores font que ce pays ne cesse de m’inspirer." },
@@ -44,9 +43,11 @@ const About = ({dark}) => {
                 <TabPanel className="flex flex-wrap justify-center">
                     <div className="w-full text-center lg:w-1/3">
                         <div className="relative inline-block text-center">
-                            <img className="w-40 md:w-80" src={portrait} alt=""/>
-                            <img className="absolute w-20 md:w-40 -right-10 -top-8 md:-top-12 md:-right-24" src={hello} alt=""/>
-                            <img className="absolute w-full left-5 top-20" src={particle} alt=""/>
+                            <LazyLoad height={'100%'} once>
+                                <img className="w-40 md:w-80" src={portrait} alt=""/>
+                                <img className="absolute w-20 md:w-40 -right-10 -top-8 md:-top-12 md:-right-24" src={hello} alt=""/>
+                                <img className="absolute w-full left-5 top-20" src={particle} alt=""/>
+                            </LazyLoad>
                         </div>
                     </div>
                     <div className="flex items-center w-full mb-10 text-xl text-justify md:w-4/5 lg:ml-20 lg:w-1/2 font-openSans">
@@ -60,7 +61,9 @@ const About = ({dark}) => {
                     {experiences.map(experience =>         
                         <div className="flex flex-wrap items-start justify-center w-full">
                             <div className="flex justify-center w-1/2 my-5 md:w-1/5">
-                                <img className="w-52" src={experience.image} alt=""/>
+                                <LazyLoad height={'100%'} once>
+                                    <img className="w-52" src={experience.image} alt=""/>
+                                </LazyLoad>
                             </div>
                             <div className="flex flex-col items-center w-full mb-5 mr-3 md:mt-20 md:items-start md:w-1/12 text-secondary">
                                 <span className="font-bold">{experience.year}</span>
@@ -85,10 +88,10 @@ const About = ({dark}) => {
                             <>
                                 <div className={`justify-center w-full md:w-1/5 p-2 md:p-8 ${index === 0 ? `-mt-11`: ``}`}>
                                     <div className="relative flex items-center justify-center mb-5">
-                                        <div>
+                                        <LazyLoad height={'100%'} once>
                                             <img onClick={() => {setActiveIndex(index)}} className="w-52" src={interest.image} alt=""/>
                                             <span className="flex justify-center mt-5 text-sm md:text-lg font-openSans text-greyLight">{interest.name}</span>
-                                        </div>
+                                        </LazyLoad>
                                         {(index < (interests.length -1) ? 
                                             (<span className={`absolute hidden md:inline-block w-5 h-5 m-5 rounded-full -right-14 bg-secondary ${index === 0 ? `top-28`: ``}`}></span>)
                                             :

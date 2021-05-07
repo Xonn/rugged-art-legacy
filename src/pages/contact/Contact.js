@@ -1,6 +1,7 @@
 import React from 'react'
 import {socialNetwork} from '../../data/socialNetwork';
 import contact from '../../images/contact.svg';
+import LazyLoad from 'react-lazyload';
 
 const Contact = ({dark}) => {
     if (dark) {
@@ -12,7 +13,9 @@ const Contact = ({dark}) => {
     return (
         <div className="flex flex-wrap w-4/5 m-auto">
             <div className="w-full m-10">
-                <img className="w-1/2" src={contact} alt=""/>
+                <LazyLoad height={'100%'} once>
+                    <img className="w-1/2" src={contact} alt=""/>
+                </LazyLoad>
             </div>
             <div className="flex justify-center w-1/2 border-r-2 border-grey">
                 <span className="mr-2 text-xl text-grey font-openSans">Social :</span>

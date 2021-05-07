@@ -7,6 +7,7 @@ import image4 from '../../images/portfolio/bn_portf_02.png';
 import image5 from '../../images/portfolio/bn_portf_02_1.png';
 import image6 from '../../images/portfolio/bn_portf_04.png';
 import image7 from '../../images/portfolio/bn_portf_04_01.png';
+import LazyLoad from 'react-lazyload';
 
 const projects = [
     { id: 1, image: image1, description: 'test' },
@@ -29,15 +30,17 @@ const Portfolio = ({dark}) => {
 
     return (
         <>
-            <img className="w-3/4 p-10 m-auto md:w-1/2 xl:w-2/5" src={portfolioSVG} alt=""/>
-
+            <LazyLoad height={'100%'} once>
+                <img className="w-3/4 p-10 m-auto md:w-1/2 xl:w-2/5" src={portfolioSVG} alt=""/>
+            </LazyLoad>
+            
             <div className="flex flex-wrap w-4/5 m-auto lg:w-3/4">
                 {projects.map(project => (
                     <div className="relative w-1/2 p-3 mt-5 sm:w-1/2 md:w-1/3 lg:w-1/4">
-                        {/* <div className="relative"> */}
+                        <LazyLoad height={'100%'} once>
                             <span className="absolute flex justify-center m-auto text-5xl left-1/2 right-1/2 font-bebas -top-3 text-primary">0{project.id}</span>
                             <img className="w-full" src={project.image} alt=""></img>
-                        {/* </div> */}
+                        </LazyLoad>
                     </div>
                 ))}
             </div>
