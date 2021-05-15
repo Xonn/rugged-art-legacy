@@ -1,10 +1,10 @@
-import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from './components/footer';
 import Homepage from './pages/homepage/Homepage';
 import Portfolio from './pages/portfolio/Portfolio';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
+import Main from './containers/layouts/Main';
+import Presentation from './pages/presentation/Presentation';
 
 const routes = [
   { path: '/', name: 'Accueil', component: Homepage, dark: true },
@@ -18,13 +18,18 @@ function App() {
   return (
     <div className="App bg-greyDark dark:bg-greyLighter">
       <Router>
-        <Navbar routes={routes} />
         <Switch>
-          {routes.filter(route => !route.external).map(route => (
-            <Route path={route.path} exact render={() => (<route.component dark={route.dark} />)} />
-          ))}
+          <Route path='/presentation' exact render={() => (<Presentation dark='false' />)} />
+
+          <Route>
+            <Main exact routes={routes}>
+                {routes.filter(route => !route.external).map(route => (
+                  <Route path={route.path} exact render={() => (<route.component dark={route.dark} />)} />
+                ))}
+            </Main>
+          </Route>
+
         </Switch>
-        <Footer routes={routes} />
       </Router>
     </div>
   );
