@@ -16,7 +16,7 @@ const routes = [
 
 function App() {
   return (
-    <div className="App bg-greyDark dark:bg-greyLighter">
+    <div className="App">
       <Router>
         <Switch>
           <Route path='/presentation' exact render={() => (<Presentation dark='false' />)} />
