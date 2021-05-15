@@ -40,7 +40,7 @@ function Presentation() {
                             <b>Animé depuis petit par l’amour des arts,</b> j’ai grandi en me nourrissant de tout ce qui m’entourait.
                             <b>Toujours à la recherche de nouveaux défis,</b> je me considère comme un créatif compulsif qui vous invite à découvrir son univers sous l’alias de <b>Rugged*.</b>
                         </p>
-                        <p className="text-green-700">*Ce pseudonyme signifie « robuste », traduction d’un style graphique construit à travers la recherche de mixité tant au niveau du support que de l’outil.</p>
+                        <p className="text-third">*Ce pseudonyme signifie « robuste », traduction d’un style graphique construit à travers la recherche de mixité tant au niveau du support que de l’outil.</p>
                     </div>
                 </div>
                 <img className="w-1/2" src={portrait} alt="" />
