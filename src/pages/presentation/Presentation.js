@@ -12,7 +12,7 @@ import one from '../../images/presentation/1.png';
 function Presentation() {
     
     return (
-        <div className="container m-auto bg-white py-14">
+        <div className="container px-20 m-auto bg-white py-14">
             <div className="flex justify-between text-4xl font-bold text-greyDark font-openSans">
                 <div className="flex flex-col tracking-lg">
                     <span>RAMBINAISING</span>
@@ -31,7 +31,7 @@ function Presentation() {
             <div className="flex flex-row">
                 <div className="w-1/2">
                     <img className="m-20 w-72" src={hello} alt="" />
-                    <div className="w-3/5 m-auto text-xl">
+                    <div className="w-2/3 m-auto text-xl">
                         <div className="relative flex flex-row items-center">
                             <img className="absolute -left-32" src={one} alt="" />
                             <h2 className="my-10 text-4xl font-bold uppercase">À propos de moi</h2>
