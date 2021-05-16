@@ -2,8 +2,6 @@ import React from 'react'
 import five from '../../../images/presentation/5.png';
 import u1 from '../../../images/presentation/under/01.png';
 import u2 from '../../../images/presentation/under/02.png';
-import u3 from '../../../images/presentation/under/03.png';
-import u4 from '../../../images/presentation/under/04.png';
 import u4b from '../../../images/presentation/under/04b.png';
 import u5 from '../../../images/presentation/under/05.png';
 
