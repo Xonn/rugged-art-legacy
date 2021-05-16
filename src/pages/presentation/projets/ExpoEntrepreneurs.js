@@ -3,13 +3,15 @@ import four from '../../../images/presentation/4.png';
 import logo from '../../../images/presentation/expoentrepreneurs/logo.png';
 import ee1 from '../../../images/presentation/expoentrepreneurs/01.png';
 import ee2 from '../../../images/presentation/expoentrepreneurs/02.png';
+import ee3 from '../../../images/presentation/expoentrepreneurs/03.png';
+import ee4 from '../../../images/presentation/expoentrepreneurs/04.png';
 import ee5 from '../../../images/presentation/expoentrepreneurs/05.png';
 import ee6 from '../../../images/presentation/expoentrepreneurs/06.png';
 
 const ExpoEntrepreneurs = () => {
     return (
         <div className="m-10">
-            <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase ml-44">
+            <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase ml-60">
                 <img className="absolute -left-32" src={four} alt="" />
                 Expo entrepreneurs
             </h2>
@@ -31,9 +33,14 @@ const ExpoEntrepreneurs = () => {
                 <img className="w-3/5 m-5" src={ee1} alt="" />
             </div>
 
-            <img className="my-10" src={ee2} alt="" />
-            <img className="my-10" src={ee5} alt="" />
-            <img className="my-10" src={ee6} alt="" />
+            <div className="flex flex-wrap justify-center">
+
+                <img className="my-10" src={ee2} alt="" />
+                <img className="my-10" src={ee3} alt="" />
+                <img className="my-10" src={ee4} alt="" />
+                <img className="my-10" src={ee5} alt="" />
+                <img className="my-10" src={ee6} alt="" />
+            </div>
         </div>
     )
 }

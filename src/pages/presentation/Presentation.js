@@ -1,6 +1,9 @@
 import React from 'react'
 import gobelins from '../../images/presentation/gobelins.png';
+import arrow from '../../images/presentation/arrow.png';
+import smiley from '../../images/presentation/smiley.gif';
 import portfolio from '../../images/presentation/portfolio.gif';
+import sommary from '../../images/presentation/sommary.gif';
 import Illustrations from './projets/Illustrations';
 import AirFrance from './projets/AirFrance';
 import ExpoEntrepreneurs from './projets/ExpoEntrepreneurs';
@@ -10,6 +13,9 @@ import Under from './projets/Under';
 import Decorban from './projets/deCorban';
 import Tsumi from './projets/Tsumi';
 import XavierBlondeau from './projets/XavierBlondeau';
+import ten from '../../images/presentation/10.png';
+import wave from '../../images/presentation/wave.gif';
+import thanks from '../../images/presentation/thanks.gif';
 
 function Presentation() {
     
@@ -29,13 +35,22 @@ function Presentation() {
             </div>
 
             <div className="my-20 border-b border-black"></div>
-            <div className="flex justify-end mr-20">
+            <div className="relative flex items-center justify-end mr-20 ">
+                <div className="w-1/2">
+                <img className="absolute bottom-0 left-20" src={smiley} alt="" />
+                    <img src={sommary} alt="" />
+                </div>
                 <ul className="w-1/2">
-                    <li className="text-4xl font-bold uppercase border-b border-black">01. À Propos de moi</li>
-                    <li className="text-4xl font-bold uppercase border-b border-black">02. Illustrations</li>
-                    <li className="text-4xl font-bold uppercase border-b border-black">03. AirFrance</li>
-                    <li className="text-4xl font-bold uppercase border-b border-black">04. ExpoEntrepreneurs</li>
-                    <li className="text-4xl font-bold uppercase border-b border-black">05. vivenda - les loges</li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">01. À Propos de moi</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">02. Illustrations</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">03. AirFrance</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">04. ExpoEntrepreneurs</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">05. Under</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">06. Vivenda - Les loges</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">07. deCorban</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">08. Tsumi</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">09. Xavier Blondeau</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">10. Conclusion</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
                 </ul>
             </div>
             <div className="my-20 border-b border-black"></div>
@@ -69,7 +84,15 @@ function Presentation() {
             <div className="my-20 border-b border-black"></div>
 
             <XavierBlondeau />
-
+            <div className="my-20 border-b border-black"></div>
+            <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase ml-44">
+                <img className="absolute -left-32" src={ten} alt="" />
+                Conclusion
+            </h2>
+            <div className="flex flex-wrap justify-center mt-32 space-y-40">
+                <img src={wave} alt="" />
+                <img src={thanks} alt="" />
+            </div>
         </div>
     )
 }

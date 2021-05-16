@@ -10,11 +10,11 @@ import t6 from '../../../images/presentation/tsumi/06.png';
 const Tsumi = () => {
     return (
         <div className="m-10">
-            <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase">
+            <h2 className="relative flex items-center my-10 ml-32 text-4xl font-bold uppercase">
                 <img className="absolute -left-32" src={height} alt="" />
                 Tsumi
             </h2>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center -mt-40">
                 <div className="relative flex flex-wrap justify-center">
                     <img className="my-10" src={t1} alt="" />
                     <div className="absolute left-0 w-3/5 -bottom-4">

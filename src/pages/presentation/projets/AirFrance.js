@@ -4,11 +4,9 @@ import dc from '../../../images/presentation/AirFrance/direction_client.png';
 import af1 from '../../../images/presentation/AirFrance/01.png';
 import af2 from '../../../images/presentation/AirFrance/02.png';
 import af3 from '../../../images/presentation/AirFrance/03.png';
-import af4 from '../../../images/presentation/AirFrance/04.png';
-import af5 from '../../../images/presentation/AirFrance/05.png';
+import af4b from '../../../images/presentation/AirFrance/04b.png';
 import af6 from '../../../images/presentation/AirFrance/06.png';
-import af7 from '../../../images/presentation/AirFrance/07.png';
-import af8 from '../../../images/presentation/AirFrance/08.png';
+import af7b from '../../../images/presentation/AirFrance/07b.png';
 import af9 from '../../../images/presentation/AirFrance/09.png';
 
 const AirFrance = () => {
@@ -43,18 +41,13 @@ const AirFrance = () => {
             <div className="flex flex-wrap">
                 <img className="w-1/2 p-5" src={af2} alt="" />
                 <img className="w-1/2 p-5" src={af3} alt="" />
-            
-                <div className="w-2/5 p-5">
-                    <img className="" src={af4} alt="" />
-                </div>
-                <div className="w-3/5 p-5">
-                    <img className="" src={af5} alt="" />
-                </div>
+                <img className="p-5" src={af4b} alt="" />
+
 
                 <img className="w-full p-5" src={af6} alt="" />
             
-                <img className="w-3/5 p-5" src={af7} alt="" />
-                <img className="w-2/5 p-5" src={af8} alt="" />
+                <img className="p-5" src={af7b} alt="" />
+                
                 <img className="flex w-full p-5" src={af9} alt="" />
             </div>
         </div>

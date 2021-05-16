@@ -1,9 +1,9 @@
 import React from 'react'
 import one from '../../../images/presentation/1.png';
 import hello from '../../../images/presentation/introduction/hello.png';
+import rugged from '../../../images/presentation/introduction/rugged.gif';
 import identity from '../../../images/presentation/introduction/identity.png';
-import lines from '../../../images/presentation/introduction/identity_lines.png';
-import pencil from '../../../images/presentation/introduction/identity_pencil.png';
+import smiley from '../../../images/presentation/smiley.gif';
 import mockup from '../../../images/presentation/introduction/mockup_identity.png';
 import portrait from '../../../images/presentation/introduction/portrait.png';
 
@@ -30,12 +30,12 @@ const Introduction = () => {
             <div className="flex flex-row">
                 <div className="w-1/2">
                     <img src={mockup} alt="" />
-                    <div className="flex flex-row justify-center w-full m-auto my-10">
-                        <img className="mx-10" src={pencil} alt="" />
-                        <img className="mx-10" src={lines} alt="" />
+                    <div className="flex flex-row justify-end w-full m-auto mt-14">
+                        <img className="mr-28" src={smiley} alt="" />
                     </div>
                 </div>
                 <div className="w-1/2">
+                    <img className="w-5/6 m-auto -mt-40" src={rugged} alt="" />
                     <img className="w-1/2 m-auto" src={identity} alt="" />
                 </div>
             </div>
