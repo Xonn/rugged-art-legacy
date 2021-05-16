@@ -42,11 +42,12 @@ const Illustrations = () => {
                     <img className="m-10" src={illustration01} alt="" />
                     <img className="m-10" src={illustration03} alt="" />
                 </div>
-                <div className="w-1/2 mt-10">
+                <div className="w-1/2 m-10">
                     <p>À main levée, réalisation d'une soixantaine de croquis de visages d’individus que je côtoie, que j’ai croisé, que j’aime, que je ne reverrai peut-être jamais.
                         J’ai voulu par un trait assez violent et énergique, marquer la fugacité d’un instant, celui où le regard se pose sur une expression, une grimace, un sourire.
                     </p>
-                    <p className="text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
+                    <br />
+                    <p className="text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> &nbsp;&nbsp; + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
                     <img className="m-10" src={illustration02} alt="" />
                     <div className="flex items-center justify-center mt-40">
                         <img className="m-10" src={pencil} alt="" />
@@ -59,9 +60,13 @@ const Illustrations = () => {
             
             <div className="my-20 border-b border-black"></div>
 
-            <div className="flex ">
-                <img className="w-1/2 m-5 mb-44" src={portrait01} alt="" />
-                <img className="w-1/2 m-5 mt-44" src={portrait02} alt="" />
+            <div className="flex">
+                <div className="w-1/2 m-5">
+                    <img className="w-full" src={portrait01} alt="" />
+                </div>
+                <div className="w-1/2 m-5 mt-32">
+                    <img className="w-full" src={portrait02} alt="" />
+                </div>
             </div>
 
             <img className="m-10" src={portrait03} alt="" />

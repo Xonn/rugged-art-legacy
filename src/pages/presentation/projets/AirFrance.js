@@ -19,10 +19,10 @@ const AirFrance = () => {
                 Air France
             </h2>
             <div className="flex justify-center">
-                <img className="w-3/5 m-5" src={af1} alt="" />
-                <div className="w-2/5 m-20">
+                <img className="w-7/12 m-5" src={af1} alt="" />
+                <div className="w-5/12 m-16">
                     <img className="mb-16" src={dc} alt="" />
-                    <div className="w-11/12">
+                    <div className="w-full">
                         <p>Réalisation de multiples supports* web et imprimés pour l’ensemble des <b>événements internationaux</b> internes et externes de la compagnie Air France.
                         Après une fusion des équipes en interne, j’ai réalisé la nouvelle identité du pôle en charge de la valorisation de l’expérience Client.
                         </p>
@@ -44,8 +44,13 @@ const AirFrance = () => {
                 <img className="w-1/2 p-5" src={af2} alt="" />
                 <img className="w-1/2 p-5" src={af3} alt="" />
             
-                <img className="w-2/5 p-5" src={af4} alt="" />
-                <img className="w-3/5 p-5" src={af5} alt="" />
+                <div className="w-2/5 p-5">
+                    <img className="" src={af4} alt="" />
+                </div>
+                <div className="w-3/5 p-5">
+                    <img className="" src={af5} alt="" />
+                </div>
+
                 <img className="w-full p-5" src={af6} alt="" />
             
                 <img className="w-3/5 p-5" src={af7} alt="" />
