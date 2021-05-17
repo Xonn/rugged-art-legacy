@@ -56,7 +56,7 @@ const Illustrations = () => {
                         J’ai voulu par un trait assez violent et énergique, marquer la fugacité d’un instant, celui où le regard se pose sur une expression, une grimace, un sourire.
                     </p>
                     <br />
-                    <p className="text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> &nbsp;&nbsp; + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
+                    <p className="font-bold text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
                     <img className="m-10" src={illustration02} alt="" />
                     <div className="flex items-end justify-center">
                         <img className="mt-64" src={smiley} alt="" />

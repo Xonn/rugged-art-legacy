@@ -21,7 +21,7 @@ const deCorban = () => {
             <div className="flex flex-row my-20">
                 <div className="relative w-1/3">
                     <img className="w-72" src={portrait} alt="" />
-                    <img className="absolute w-56 -bottom-28 right-20" src={decorban} alt="" />
+                    <img className="absolute w-56 -bottom-14 right-14" src={decorban} alt="" />
                 </div>
 
                 <p className="w-1/3 m-10">Bienvenue chez deCorban. <br />

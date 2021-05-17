@@ -27,7 +27,7 @@ const ExpoEntrepreneurs = () => {
                         </p>
 
                         <br />
-                        <p className="text-third">* + Création d’un branding 360° - <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- logo, site web, illustrations, charte graphique etc... <br /> + Stratégie Créative en permanence</p>
+                        <p className="font-bold text-third">* + Création d’un branding 360° - <br /> &nbsp;&nbsp;&nbsp;- logo, site web, illustrations, charte graphique etc... <br /> + Stratégie Créative en permanence</p>
                     </div>
                 </div>
                 <img className="w-3/5 m-5" src={ee1} alt="" />

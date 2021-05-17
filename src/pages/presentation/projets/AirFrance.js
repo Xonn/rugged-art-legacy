@@ -18,9 +18,9 @@ const AirFrance = () => {
             </h2>
             <div className="flex justify-center">
                 <img className="w-7/12 m-5" src={af1} alt="" />
-                <div className="w-5/12 m-16">
+                <div className="flex flex-col justify-center w-5/12 m-8">
                     <img className="mb-16" src={dc} alt="" />
-                    <div className="w-full">
+                    <div className="w-10/12">
                         <p>Réalisation de multiples supports* web et imprimés pour l’ensemble des <b>événements internationaux</b> internes et externes de la compagnie Air France.
                         Après une fusion des équipes en interne, j’ai réalisé la nouvelle identité du pôle en charge de la valorisation de l’expérience Client.
                         </p>
@@ -33,7 +33,7 @@ const AirFrance = () => {
                         <b>« Pourquoi et comment s'approprier l'art de vivre à la française sur le marché international ? »</b>
                         </p>
                         <br />
-                        <p className="text-third">* + Création de plus de 70 affiches événementielles + Confection d’un objet éditorial de type mémoire + Réalisation de l’identité visuelle du pôle Client</p>
+                        <p className="font-bold text-third">* + Création de plus de 70 affiches événementielles <br /> + Confection d’un objet éditorial de type mémoire <br /> + Réalisation de l’identité visuelle du pôle Client</p>
                     </div>
                 </div>
                 

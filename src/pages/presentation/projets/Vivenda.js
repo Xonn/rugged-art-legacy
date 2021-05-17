@@ -14,12 +14,12 @@ const Vivenda = () => {
                 Vivenda - Les loges
             </h2>
 
-            <div className="flex flex-wrap justify-center">
-                <img className="my-10" src={v1} alt="" />
-                <img className="my-10" src={v2} alt="" />
-                <img className="my-10" src={v3} alt="" />
-                <img className="my-10" src={v4} alt="" />
-                <img className="my-10" src={v5} alt="" />
+            <div className="flex flex-col items-center justify-center space-y-10 ">
+                <img className="" src={v1} alt="" />
+                <img className="" src={v2} alt="" />
+                <img className="" src={v3} alt="" />
+                <img className="" src={v4} alt="" />
+                <img className="" src={v5} alt="" />
             </div>
         </div>
     )
