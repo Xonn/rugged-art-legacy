@@ -19,8 +19,10 @@ import thanks from '../../images/presentation/thanks.gif';
 import Slide from 'react-reveal/Slide';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 function Presentation() {
+    document.title = "Gobelins - Présentation";
     
     return (
         <div className="container px-20 m-auto bg-white py-14">
@@ -40,7 +42,9 @@ function Presentation() {
             <div className="my-20 mt-56 border-b border-black"></div>
             <div className="relative flex items-center justify-end mr-20 ">
                 <div className="w-1/2">
-                    <img className="absolute bottom-0 left-20" src={smiley} alt="" />
+                    <Pulse forever>
+                        <img className="absolute bottom-0 left-20" src={smiley} alt="" />
+                    </Pulse>
                     <img className="w-full" src={sommary} alt="" />
                 </div>
                 <Slide right opposite cascade>

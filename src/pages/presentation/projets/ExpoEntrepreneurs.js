@@ -21,7 +21,7 @@ const ExpoEntrepreneurs = () => {
             </h2>
 
             <div className="flex justify-center mb-10">
-                <div className="w-2/5 m-20">
+                <div className="w-2/5 m-16">
                     <Fade delay="500">
                         <img className="mb-16" src={logo} alt="" />
                     </Fade>
