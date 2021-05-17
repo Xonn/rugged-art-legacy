@@ -22,7 +22,7 @@ const Under = () => {
                         <img src={u1} alt="" />
                     </Fade>
                     <Fade delay="1000" left>
-                        <p className="m-10">Directeur Artistique : Rugged <br /> Photographe : deCorban <br /> Calligraphe : Alpha Skao <br /> Modèle(s) : Léa Nozières,  Héloïse L-Martinez  Daytona <br /> Studio : Something Pink Studio</p>
+                        <p className="m-10"><b>Directeur Artistique</b> : Rugged <br /> <b>Photographe</b> : deCorban <br /> <b>Calligraphe</b> : Alpha Skao <br /> <b>Modèle(s)</b> : Léa Nozières,  Héloïse L-Martinez  Daytona <br /> <b>Studio</b> : Something Pink Studio</p>
                     </Fade>
                 </div>
                 <div className="w-1/2">

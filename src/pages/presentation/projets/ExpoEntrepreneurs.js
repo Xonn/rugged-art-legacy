@@ -25,7 +25,7 @@ const ExpoEntrepreneurs = () => {
                     <Fade delay="500">
                         <img className="mb-16" src={logo} alt="" />
                     </Fade>
-                    <div className="w-11/12">
+                    <div className="w-full">
                         <Fade delay="1000" left>
                             <p>Expo Entrepreneurs est un événement qui se tient annuellement, à Montréal.
                             Créée pour «inspirer, connecter et solutionner» cette initiative a pour vocation première de rassembler l’écosystème entrepreneurial du Québec.

@@ -3,6 +3,7 @@ import two from '../../../images/presentation/2.png';
 import illustration01 from '../../../images/presentation/illustrations/01.png';
 import illustration02 from '../../../images/presentation/illustrations/02.png';
 import illustration03 from '../../../images/presentation/illustrations/03.png';
+import illustration03b from '../../../images/presentation/illustrations/03b.jpg';
 import illustration04 from '../../../images/presentation/illustrations/04.png';
 import portrait01 from '../../../images/presentation/illustrations/portrait_01.png';
 import portrait02 from '../../../images/presentation/illustrations/portrait_02.gif';
@@ -11,9 +12,12 @@ import smiley from '../../../images/presentation/smiley.gif';
 import insta_01 from '../../../images/presentation/illustrations/insta/01.png';
 import insta_02 from '../../../images/presentation/illustrations/insta/02.png';
 import insta_03 from '../../../images/presentation/illustrations/insta/03.png';
+import insta_03b from '../../../images/presentation/illustrations/insta/03b.jpg';
 import insta_04 from '../../../images/presentation/illustrations/insta/04.png';
 import insta_05 from '../../../images/presentation/illustrations/insta/05.png';
+import insta_05b from '../../../images/presentation/illustrations/insta/05b.jpg';
 import insta_06 from '../../../images/presentation/illustrations/insta/06.png';
+import insta_06b from '../../../images/presentation/illustrations/insta/06b.jpg';
 import insta_07 from '../../../images/presentation/illustrations/insta/07.png';
 import insta_08 from '../../../images/presentation/illustrations/insta/08.png';
 import insta_09 from '../../../images/presentation/illustrations/insta/09.png';
@@ -40,6 +44,7 @@ import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import Zoom from 'react-reveal/Zoom';
+import { SRLWrapper } from "simple-react-lightbox";
 
 const Illustrations = () => {
     return (
@@ -58,7 +63,13 @@ const Illustrations = () => {
                         <img className="m-10" src={illustration01} alt="" />
                     </Fade>
                     <Fade delay="1500">
-                        <img className="m-10" src={illustration03} alt="" />
+                        <SRLWrapper>
+                            <a className="m-10" href={illustration03b}>
+                                <img className="w-full" src={illustration03} alt="" />
+                            </a>
+                            {/* <img className="m-10" src={portrait03} alt="" /> */}
+                        </SRLWrapper>
+                        {/* <img className="m-10" src={illustration03} alt="" /> */}
                     </Fade>
                 </div>
                 <div className="w-1/2 m-10">
@@ -113,7 +124,7 @@ const Illustrations = () => {
                     </Fade>
                 </div>
             </div>
-            <Fade delay="1500">
+            <Fade delay="1000">
                 <img className="m-10" src={portrait03} alt="" />
             </Fade>
 
@@ -121,13 +132,20 @@ const Illustrations = () => {
 
             <div className="bg-greyLighter -mx-52 -mt-96">
                 <Zoom cascade>
+                <SRLWrapper>
                     <div className="container flex flex-wrap justify-center px-20 pt-56 mx-auto">
                         <img className="w-1/3 p-5" src={insta_01} alt="" />
                         <img className="w-1/3 p-5" src={insta_02} alt="" />
-                        <img className="w-1/3 p-5" src={insta_03} alt="" />
+                        <a className="w-1/3 p-5" href={insta_03b}>
+                            <img className="w-full" src={insta_03} alt="" />
+                        </a>
                         <img className="w-1/3 p-5" src={insta_04} alt="" />
-                        <img className="w-1/3 p-5" src={insta_05} alt="" />
-                        <img className="w-1/3 p-5" src={insta_06} alt="" />
+                        <a className="w-1/3 p-5" href={insta_05b}>
+                            <img className="w-full" src={insta_05} alt="" />
+                        </a>
+                        <a className="w-1/3 p-5" href={insta_06b}>
+                            <img className="w-full" src={insta_06} alt="" />
+                        </a>
                         <img className="w-1/3 p-5" src={insta_07} alt="" />
                         <img className="w-1/3 p-5" src={insta_08} alt="" />
                         <img className="w-1/3 p-5" src={insta_09} alt="" />
@@ -141,6 +159,7 @@ const Illustrations = () => {
                         <img className="w-1/3 p-5" src={insta_17} alt="" />
                         <img className="w-1/3 p-5" src={insta_18} alt="" />
                     </div>
+                    </SRLWrapper>
                 </Zoom>
             </div>
         </div>

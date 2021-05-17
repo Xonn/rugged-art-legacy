@@ -2,9 +2,7 @@ import React from 'react'
 import seven from '../../../images/presentation/7.png';
 import portrait from '../../../images/presentation/decorban/portrait.png';
 import decorban from '../../../images/presentation/decorban/decorban.gif';
-import d1 from '../../../images/presentation/decorban/01.png';
-import d2 from '../../../images/presentation/decorban/02.png';
-import d3 from '../../../images/presentation/decorban/03.png';
+import d123 from '../../../images/presentation/decorban/123.png';
 import d4 from '../../../images/presentation/decorban/04.png';
 import d5 from '../../../images/presentation/decorban/05.png';
 import d6 from '../../../images/presentation/decorban/06.png';
@@ -32,14 +30,14 @@ const deCorban = () => {
 
                 <Fade delay="1000">
                     <p className="w-1/3 m-10">Bienvenue chez deCorban. <br />
-                    Poussez la porte de son monde... Un univers qui explore le corps nu, et ses reflets oniriques, romantiques, érotiques… Ici, vous entrez dans une autre sphère, laissez vous plonger dans une autre atmosphère : <b>Découvrez l’Eromantisme.</b> <br /> <br />Refonte complète du site : <span className="text-third">www.decorban.art</span></p>
+                    Poussez la porte de son monde... Un univers qui explore le corps nu, et ses reflets oniriques, romantiques, érotiques… Ici, vous entrez dans une autre sphère, laissez vous plonger dans une autre atmosphère : <br /> <b>Découvrez l’Eromantisme.</b> <br /> <br />Refonte complète du site : <span className="text-third">www.decorban.art</span></p>
                 </Fade>
                 <Fade delay="1000">
                     <p className="w-1/3 m-10">deCorban est un photographe basé en région parisienne reconnu pour son travail à caractère érotique autour du corps humain. <br /> <br /> Le projet a été réalisé en binôme avec un prestataire developpeur - je me suis occupé de la direction artistique du projet ainsi que du recrutement des ressources externes. Une charte graphique à été réalisée autour du rework de son logotype. <br /> <br /> Contribution : Bastien Soares <br /> <span className="text-third">developpeur back-end.</span></p>
                 </Fade>
             </div>
             <div className="flex flex-wrap m-10 mt-40 space-y-10">
-                <Fade left delay="500">
+                {/* <Fade left delay="500">
                     <img src={d1} alt="" className="w-1/3" />
                 </Fade>
                 <Fade top delay="500">
@@ -47,7 +45,9 @@ const deCorban = () => {
                 </Fade>
                 <Fade right delay="500">
                     <img src={d3} alt="" className="w-1/3" />
-                </Fade>
+                </Fade> */}
+                <img src={d123} alt="" className="w-full" />
+
                 <Fade cascade delay="500">
                     <img src={d4} alt="" className="w-full" />
                     <img src={d5} alt="" className="w-full" />
