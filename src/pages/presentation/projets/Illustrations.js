@@ -36,85 +36,112 @@ import p07 from '../../../images/presentation/illustrations/portrait/07.jpg';
 import p08 from '../../../images/presentation/illustrations/portrait/08.jpg';
 import p09 from '../../../images/presentation/illustrations/portrait/09.jpg';
 import p10 from '../../../images/presentation/illustrations/portrait/10.jpg';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
+import Zoom from 'react-reveal/Zoom';
 
 const Illustrations = () => {
     return (
         <div>
             <div className="flex justify-center">
                 <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase">
-                    <img className="absolute -left-32" src={two} alt="" />
-                    Illustration
+                    <Flip opposite delay="700" duration="1500" top cascade>
+                        <img className="absolute -left-32" src={two} alt="" />
+                        Illustration
+                    </Flip>
                 </h2>
             </div>
             <div className="flex">
                 <div className="flex flex-wrap justify-end w-1/2 justify-items-end">
-                    <img className="m-10" src={illustration01} alt="" />
-                    <img className="m-10" src={illustration03} alt="" />
+                    <Fade delay="500">
+                        <img className="m-10" src={illustration01} alt="" />
+                    </Fade>
+                    <Fade delay="1500">
+                        <img className="m-10" src={illustration03} alt="" />
+                    </Fade>
                 </div>
                 <div className="w-1/2 m-10">
-                    <p>À main levée, réalisation d'une soixantaine de croquis de visages d’individus que je côtoie, que j’ai croisé, que j’aime, que je ne reverrai peut-être jamais.
-                        J’ai voulu par un trait assez violent et énergique, marquer la fugacité d’un instant, celui où le regard se pose sur une expression, une grimace, un sourire.
-                    </p>
-                    <br />
-                    <p className="font-bold text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
-                    <img className="m-10" src={illustration02} alt="" />
+                    <Fade delay="1000" right>
+                        <p>À main levée, réalisation d'une soixantaine de croquis de visages d’individus que je côtoie, que j’ai croisé, que j’aime, que je ne reverrai peut-être jamais.
+                            J’ai voulu par un trait assez violent et énergique, marquer la fugacité d’un instant, celui où le regard se pose sur une expression, une grimace, un sourire.
+                        </p>
+                        <br />
+                        <p className="font-bold text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
+                    </Fade>
+                    <Fade delay="1000">
+                        <img className="m-10" src={illustration02} alt="" />
+                    </Fade>
                     <div className="flex items-end justify-center">
-                        <img className="mt-64" src={smiley} alt="" />
+                        <Pulse forever>
+                            <img className="mt-64" src={smiley} alt="" />
+                        </Pulse>
                     </div>
                 </div>
             </div>
-            
-            <img className="m-10" src={illustration04} alt="" />
-            
-            <div className="flex flex-wrap w-full">
-                <img className="w-1/5" src={p01} alt="" />
-                <img className="w-1/5" src={p02} alt="" />
-                <img className="w-1/5" src={p03} alt="" />
-                <img className="w-1/5" src={p04} alt="" />
-                <img className="w-1/5" src={p05} alt="" />
-                <img className="w-1/5" src={p06} alt="" />
-                <img className="w-1/5" src={p07} alt="" />
-                <img className="w-1/5" src={p08} alt="" />
-                <img className="w-1/5" src={p09} alt="" />
-                <img className="w-1/5" src={p10} alt="" />
-            </div>
+            <Fade delay="500">
+                <img className="m-10" src={illustration04} alt="" />
+            </Fade>
+            <Zoom cascade>
+                <div className="flex flex-wrap w-full">
+                    <img className="w-1/5" src={p01} alt="" />
+                    <img className="w-1/5" src={p02} alt="" />
+                    <img className="w-1/5" src={p03} alt="" />
+                    <img className="w-1/5" src={p04} alt="" />
+                    <img className="w-1/5" src={p05} alt="" />
+                    <img className="w-1/5" src={p06} alt="" />
+                    <img className="w-1/5" src={p07} alt="" />
+                    <img className="w-1/5" src={p08} alt="" />
+                    <img className="w-1/5" src={p09} alt="" />
+                    <img className="w-1/5" src={p10} alt="" />
+                </div>
+            </Zoom>
             <div className="my-20 border-b border-black"></div>
 
             <div className="flex">
                 <div className="relative w-1/2 m-5">
-                    <img className="w-full" src={portrait01} alt="" />
-                    <img className="absolute right-10 bottom-10" src={smiley} alt="" />
+                    <Fade delay="500">
+                        <img className="w-full" src={portrait01} alt="" />
+                    </Fade>
+                    <Pulse forever>
+                        <img className="absolute right-10 bottom-10" src={smiley} alt="" />
+                    </Pulse>
                 </div>
                 <div className="w-1/2 m-5 mt-32">
-                    <img className="w-full" src={portrait02} alt="" />
+                    <Fade delay="1000">
+                        <img className="w-full" src={portrait02} alt="" />
+                    </Fade>
                 </div>
             </div>
-
-            <img className="m-10" src={portrait03} alt="" />
+            <Fade delay="1500">
+                <img className="m-10" src={portrait03} alt="" />
+            </Fade>
 
             <div className="z-50 my-32 border-b border-black"></div>
 
             <div className="bg-greyLighter -mx-96 -mt-96">
-                <div className="container flex flex-wrap justify-center px-20 pt-56 mx-auto">
-                    <img className="w-1/3 p-5" src={insta_01} alt="" />
-                    <img className="w-1/3 p-5" src={insta_02} alt="" />
-                    <img className="w-1/3 p-5" src={insta_03} alt="" />
-                    <img className="w-1/3 p-5" src={insta_04} alt="" />
-                    <img className="w-1/3 p-5" src={insta_05} alt="" />
-                    <img className="w-1/3 p-5" src={insta_06} alt="" />
-                    <img className="w-1/3 p-5" src={insta_07} alt="" />
-                    <img className="w-1/3 p-5" src={insta_08} alt="" />
-                    <img className="w-1/3 p-5" src={insta_09} alt="" />
-                    <img className="w-1/3 p-5" src={insta_10} alt="" />
-                    <img className="w-1/3 p-5" src={insta_11} alt="" />
-                    <img className="w-1/3 p-5" src={insta_12} alt="" />
-                    <img className="w-1/3 p-5" src={insta_13} alt="" />
-                    <img className="w-1/3 p-5" src={insta_14} alt="" />
-                    <img className="w-1/3 p-5" src={insta_15} alt="" />
-                    <img className="w-1/3 p-5" src={insta_16} alt="" />
-                    <img className="w-1/3 p-5" src={insta_17} alt="" />
-                    <img className="w-1/3 p-5" src={insta_18} alt="" />
-                </div>
+                <Zoom cascade>
+                    <div className="container flex flex-wrap justify-center px-20 pt-56 mx-auto">
+                        <img className="w-1/3 p-5" src={insta_01} alt="" />
+                        <img className="w-1/3 p-5" src={insta_02} alt="" />
+                        <img className="w-1/3 p-5" src={insta_03} alt="" />
+                        <img className="w-1/3 p-5" src={insta_04} alt="" />
+                        <img className="w-1/3 p-5" src={insta_05} alt="" />
+                        <img className="w-1/3 p-5" src={insta_06} alt="" />
+                        <img className="w-1/3 p-5" src={insta_07} alt="" />
+                        <img className="w-1/3 p-5" src={insta_08} alt="" />
+                        <img className="w-1/3 p-5" src={insta_09} alt="" />
+                        <img className="w-1/3 p-5" src={insta_10} alt="" />
+                        <img className="w-1/3 p-5" src={insta_11} alt="" />
+                        <img className="w-1/3 p-5" src={insta_12} alt="" />
+                        <img className="w-1/3 p-5" src={insta_13} alt="" />
+                        <img className="w-1/3 p-5" src={insta_14} alt="" />
+                        <img className="w-1/3 p-5" src={insta_15} alt="" />
+                        <img className="w-1/3 p-5" src={insta_16} alt="" />
+                        <img className="w-1/3 p-5" src={insta_17} alt="" />
+                        <img className="w-1/3 p-5" src={insta_18} alt="" />
+                    </div>
+                </Zoom>
             </div>
         </div>
     )

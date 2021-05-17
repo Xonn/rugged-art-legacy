@@ -16,6 +16,9 @@ import XavierBlondeau from './projets/XavierBlondeau';
 import ten from '../../images/presentation/10.png';
 import wave from '../../images/presentation/wave.gif';
 import thanks from '../../images/presentation/thanks.gif';
+import Slide from 'react-reveal/Slide';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 function Presentation() {
     
@@ -40,18 +43,20 @@ function Presentation() {
                     <img className="absolute bottom-0 left-20" src={smiley} alt="" />
                     <img className="w-full" src={sommary} alt="" />
                 </div>
-                <ul className="w-1/2">
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">01. À Propos de moi</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">02. Illustrations</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">03. AirFrance</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">04. ExpoEntrepreneurs</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">05. Under</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">06. Vivenda - Les loges</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">07. deCorban</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">08. Tsumi</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">09. Xavier Blondeau</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                    <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">10. Conclusion</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
-                </ul>
+                <Slide right opposite cascade>
+                    <ul className="w-1/2">
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">01. À Propos de moi</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">02. Illustrations</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">03. AirFrance</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">04. ExpoEntrepreneurs</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">05. Under</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">06. Vivenda - Les loges</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">07. deCorban</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">08. Tsumi</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">09. Xavier Blondeau</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                        <li className="relative my-2 border-b border-black"><button className="my-1 text-4xl font-bold uppercase hover:text-third">10. Conclusion</button><img className="absolute right-0 bottom-2" src={arrow} alt="" /></li>
+                    </ul>
+                </Slide>
             </div>
             <div className="my-20 border-b border-black"></div>
 
@@ -86,12 +91,16 @@ function Presentation() {
             <XavierBlondeau />
             <div className="my-20 border-b border-black"></div>
             <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase ml-44">
-                <img className="absolute -left-32" src={ten} alt="" />
-                Conclusion
+                <Flip opposite delay="700" duration="1500" left cascade>
+                    <img className="absolute -left-32" src={ten} alt="" />
+                    Conclusion
+                </Flip>
             </h2>
             <div className="flex flex-wrap justify-center mt-32 space-y-40">
-                <img src={wave} alt="" />
-                <img src={thanks} alt="" />
+                <Fade delay="500">
+                    <img src={wave} alt="" />
+                    <img src={thanks} alt="" />
+                </Fade>
             </div>
         </div>
     )

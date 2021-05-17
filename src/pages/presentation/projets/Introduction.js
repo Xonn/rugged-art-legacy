@@ -6,37 +6,56 @@ import identity from '../../../images/presentation/introduction/identity.png';
 import smiley from '../../../images/presentation/smiley.gif';
 import mockup from '../../../images/presentation/introduction/mockup_identity.png';
 import portrait from '../../../images/presentation/introduction/portrait.png';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 const Introduction = () => {
     return (
         <div>
             <div className="flex flex-row">
                 <div className="w-1/2">
-                    <img className="m-20 w-72" src={hello} alt="" />
+                    <Fade>
+                        <img className="m-20 w-72" src={hello} alt="" />
+                    </Fade>
                     <div className="w-2/3 m-auto text-xl">
                         <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase">
-                            <img className="absolute -left-32" src={one} alt="" />
-                            À propos de moi
+                            <Flip opposite delay="700" duration="1500" left cascade>
+                                <img className="absolute -left-32" src={one} alt="" />
+                                À propos de moi
+                            </Flip>
                         </h2>
+                        <Fade delay="1000" left>
                         <p className="my-10">Je m’appelle Dylan Rambinaising, graphiste & illustrateur freelance depuis 2015.
                             <b>Animé depuis petit par l’amour des arts,</b> j’ai grandi en me nourrissant de tout ce qui m’entourait.
                             <b>Toujours à la recherche de nouveaux défis,</b> je me considère comme un créatif compulsif qui vous invite à découvrir son univers sous l’alias de <b>Rugged*.</b>
                         </p>
                         <p className="text-third">*Ce pseudonyme signifie « robuste », traduction d’un style graphique construit à travers la recherche de mixité tant au niveau du support que de l’outil.</p>
+                        </Fade>
                     </div>
                 </div>
-                <img className="w-1/2" src={portrait} alt="" />
+                <Fade delay="500">
+                    <img className="w-1/2" src={portrait} alt="" />
+                </Fade>
             </div>
             <div className="flex flex-row">
                 <div className="w-1/2">
-                    <img src={mockup} alt="" />
+                    <Fade delay="1000">
+                        <img src={mockup} alt="" />
+                    </Fade>
                     <div className="flex flex-row justify-end w-full m-auto mt-14">
-                        <img className="mr-28" src={smiley} alt="" />
+                        <Pulse forever>
+                            <img className="mr-28" src={smiley} alt="" />
+                        </Pulse>
                     </div>
                 </div>
                 <div className="w-1/2">
-                    <img className="w-5/6 m-auto -mt-40" src={rugged} alt="" />
+                <Fade delay="500">
+                    <img className="z-20 w-5/6 m-auto -mt-40" src={rugged} alt="" />
+                </Fade>
+                <Fade delay="1000">
                     <img className="w-1/2 m-auto" src={identity} alt="" />
+                </Fade>
                 </div>
             </div>
         </div>
