@@ -28,7 +28,7 @@ const XavierBlondeau = () => {
             <div className="flex flex-row items-center justify-center">
                 <Fade delay="1000" left>
                     <p className="w-1/3 m-16"><b>Refonte de l’identité visuelle*</b><br /> du photographe <b>Xavier Blondeau.</b> <br /> <br /> Réalisation du monogramme épuré, mathématique, logique, un retour à l’élémentaire dans une société de plus en plus superficielle et pleine de fioritures. Le contour rappelle l’objectif du photographe, les limites et les frontières de son travail. Il délimite le logo dans un espace qui le fait se suffire à lui-même. <br /> <br /> 
-                    <span className="font-bold text-third"> * + Création du logotype et de sa charte graphique <br /> + Confection de deux objets éditoriaux <br /> + Réalisation de deux affiches d’expositions</span></p>
+                    <span className="text-third"> * + Création du logotype et de sa charte graphique <br /> + Confection de deux objets éditoriaux <br /> + Réalisation de deux affiches d’expositions</span></p>
                 </Fade>
                 <div className="w-1/3">
                     <Fade delay="800">

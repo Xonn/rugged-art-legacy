@@ -23,7 +23,7 @@ import Fade from 'react-reveal/Fade';
 function Presentation() {
     
     return (
-        <div className="container px-20 m-auto bg-white py-28">
+        <div className="container px-20 m-auto bg-white py-14">
             <div className="flex justify-between text-4xl font-bold text-greyDark font-openSans">
                 <div className="flex flex-col tracking-lg">
                     <span>RAMBINAISING</span>
@@ -33,11 +33,11 @@ function Presentation() {
             </div>
             
             <div className="relative flex flex-wrap items-center justify-end h-full justify-items-center">
-                <img className="m-auto mb-28 mt-44" src={portfolio} alt="" />
+                <img className="m-auto mb-20" src={portfolio} alt="" />
                 <img className="absolute bottom-0 my-10" src={gobelins} alt="" />
             </div>
 
-            <div className="my-20 border-b border-black"></div>
+            <div className="my-20 mt-56 border-b border-black"></div>
             <div className="relative flex items-center justify-end mr-20 ">
                 <div className="w-1/2">
                     <img className="absolute bottom-0 left-20" src={smiley} alt="" />

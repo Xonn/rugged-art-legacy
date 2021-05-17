@@ -28,21 +28,21 @@ const AirFrance = () => {
                     <Fade delay="800">
                         <img className="mb-16" src={dc} alt="" />
                     </Fade>
-                    <div className="w-10/12">
+                    <div className="w-11/12">
                         <Fade delay="1000" right>
                             <p>Réalisation de multiples supports* web et imprimés pour l’ensemble des <b>événements internationaux</b> internes et externes de la compagnie Air France.
                             Après une fusion des équipes en interne, j’ai réalisé la nouvelle identité du pôle en charge de la valorisation de l’expérience Client.
                             </p>
                             <br />
                             <p>
-                            Pour clôturer dignement mon apprentissage chez eux, j'ai réalisé un mémoire sur les bienfaits de cette opportunité au travers de la problématique :
+                            Pour clôturer dignement mon apprentissage chez eux, j'ai réalisé un mémoire sur les bienfaits de cette opportunité au travers de la problématique :
                             </p>
                             <br />
                             <p>
                             <b>« Pourquoi et comment s'approprier l'art de vivre à la française sur le marché international ? »</b>
                             </p>
                             <br />
-                            <p className="font-bold text-third">* + Création de plus de 70 affiches événementielles <br /> + Confection d’un objet éditorial de type mémoire <br /> + Réalisation de l’identité visuelle du pôle Client</p>
+                            <p className="text-third">* + Création de plus de 70 affiches événementielles <br /> + Confection d’un objet éditorial de type mémoire <br /> + Réalisation de l’identité visuelle du pôle Client</p>
                         </Fade>
                     </div>
                 </div>

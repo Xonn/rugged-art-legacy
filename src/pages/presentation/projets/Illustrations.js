@@ -63,11 +63,11 @@ const Illustrations = () => {
                 </div>
                 <div className="w-1/2 m-10">
                     <Fade delay="1000" right>
-                        <p>À main levée, réalisation d'une soixantaine de croquis de visages d’individus que je côtoie, que j’ai croisé, que j’aime, que je ne reverrai peut-être jamais.
-                            J’ai voulu par un trait assez violent et énergique, marquer la fugacité d’un instant, celui où le regard se pose sur une expression, une grimace, un sourire.
+                        <p><b>À main levée, réalisation d'une soixantaine de croquis</b> de visages d’individus que je côtoie, que j’ai croisé, que j’aime, que je ne reverrai peut-être jamais.
+                            J’ai voulu par un trait assez violent et énergique, marquer <b>la fugacité d’un instant,</b> celui où le regard se pose sur une expression, une grimace, un sourire.
                         </p>
                         <br />
-                        <p className="font-bold text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
+                        <p className="text-third">* + Sélection sur plus de 60 croquis réalisés entre 2015 et 2019 <br /> + Un seul outil utilisé : Bic noir dont certains en temps limités</p>
                     </Fade>
                     <Fade delay="1000">
                         <img className="m-10" src={illustration02} alt="" />
@@ -119,7 +119,7 @@ const Illustrations = () => {
 
             <div className="z-50 my-32 border-b border-black"></div>
 
-            <div className="bg-greyLighter -mx-96 -mt-96">
+            <div className="bg-greyLighter -mx-52 -mt-96">
                 <Zoom cascade>
                     <div className="container flex flex-wrap justify-center px-20 pt-56 mx-auto">
                         <img className="w-1/3 p-5" src={insta_01} alt="" />
