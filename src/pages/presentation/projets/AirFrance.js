@@ -1,5 +1,4 @@
 import React from 'react'
-import three from '../../../images/presentation/3.png';
 import dc from '../../../images/presentation/AirFrance/direction_client.png';
 import af1 from '../../../images/presentation/AirFrance/01.png';
 import af2 from '../../../images/presentation/AirFrance/02.png';
@@ -8,18 +7,13 @@ import af4b from '../../../images/presentation/AirFrance/04b.png';
 import af6 from '../../../images/presentation/AirFrance/06.png';
 import af7b from '../../../images/presentation/AirFrance/07b.png';
 import af9 from '../../../images/presentation/AirFrance/09.png';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Title from '../components/Title';
 
-const AirFrance = () => {
+const AirFrance = ({title, id}) => {
     return (
-        <div className="m-10">
-            <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase ml-60">
-                <Flip opposite delay="700" duration="1500" top cascade>
-                    <img className="absolute -left-32" src={three} alt="" />
-                    Air France
-                </Flip>
-            </h2>
+        <div className="container mx-auto">
+            <Title title={title} number={id} cssClass="ml-36" />
             <div className="flex justify-center">
                 <Fade delay="500">
                     <img className="w-7/12 m-5" src={af1} alt="" />

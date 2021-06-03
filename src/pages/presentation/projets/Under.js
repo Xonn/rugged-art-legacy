@@ -1,23 +1,17 @@
 import React from 'react'
-import five from '../../../images/presentation/5.png';
 import u1 from '../../../images/presentation/under/01.png';
 import u2 from '../../../images/presentation/under/02.png';
 import u4b from '../../../images/presentation/under/04b.png';
 import u5 from '../../../images/presentation/under/05.png';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Title from '../components/Title';
 
-const Under = () => {
+const Under = ({title, id}) => {
     return (
-        <div className="m-10">
-            <h2 className="relative flex items-center my-10 ml-40 text-4xl font-bold uppercase">
-                <Flip opposite delay="700" duration="1500" left cascade>
-                    <img className="absolute -left-32" src={five} alt="" />
-                    Under
-                </Flip>
-            </h2>
-            <div className="flex">
-                <div className="w-1/2">
+        <div className="container mx-auto">
+            <Title title={title} number={id} cssClass="ml-36" />
+            <div className="flex justify-between">
+                <div className="w-1/3">
                     <Fade delay="500">
                         <img src={u1} alt="" />
                     </Fade>
@@ -27,7 +21,7 @@ const Under = () => {
                 </div>
                 <div className="w-1/2">
                     <Fade delay="800">
-                        <img src={u2} alt="" />
+                        <img className="w-full" src={u2} alt="" />
                     </Fade>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import four from '../../../images/presentation/4.png';
 import logo from '../../../images/presentation/expoentrepreneurs/logo.png';
 import ee1 from '../../../images/presentation/expoentrepreneurs/01.png';
 import ee2 from '../../../images/presentation/expoentrepreneurs/02.png';
@@ -7,18 +6,13 @@ import ee3 from '../../../images/presentation/expoentrepreneurs/03.png';
 import ee4 from '../../../images/presentation/expoentrepreneurs/04.png';
 import ee5 from '../../../images/presentation/expoentrepreneurs/05.png';
 import ee6 from '../../../images/presentation/expoentrepreneurs/06.png';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Title from '../components/Title';
 
-const ExpoEntrepreneurs = () => {
+const ExpoEntrepreneurs = ({title, id}) => {
     return (
-        <div className="m-10">
-            <h2 className="relative flex items-center my-10 text-4xl font-bold uppercase ml-60">
-                <Flip opposite delay="700" duration="1500" top cascade>
-                    <img className="absolute -left-32" src={four} alt="" />
-                    Expo entrepreneurs
-                </Flip>
-            </h2>
+        <div className="container mx-auto">
+            <Title title={title} number={id} cssClass="ml-36" />
 
             <div className="flex justify-center mb-10">
                 <div className="w-2/5 m-16">

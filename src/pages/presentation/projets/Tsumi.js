@@ -1,23 +1,18 @@
-import React from 'react'
-import height from '../../../images/presentation/8.png';
+import React from 'react';
 import t1 from '../../../images/presentation/tsumi/01.png';
 import t2 from '../../../images/presentation/tsumi/02.png';
 import t3 from '../../../images/presentation/tsumi/03.png';
 import t4 from '../../../images/presentation/tsumi/04.png';
 import t5 from '../../../images/presentation/tsumi/05.gif';
 import t6 from '../../../images/presentation/tsumi/06.png';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Title from '../components/Title';
 
-const Tsumi = () => {
+const Tsumi = ({title, id}) => {
     return (
-        <div className="m-10">
-            <h2 className="relative flex items-center my-10 ml-32 text-4xl font-bold uppercase">
-                <Flip opposite delay="700" duration="1500" left cascade>
-                    <img className="absolute -left-32" src={height} alt="" />
-                    Tsumi
-                </Flip>
-            </h2>
+        <div className="container mx-auto">
+            <Title title={title} number={id} cssClass="ml-36" />
+
             <div className="flex flex-wrap justify-center -mt-40">
                 <div className="relative flex flex-wrap justify-center">
                     <Fade delay="500">
